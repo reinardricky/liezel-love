@@ -1,17 +1,12 @@
 import React from 'react';
 
 const Question = () => (
-  <div style={styles.container}>
-    <h1>Liezel, will you be my girlfriend?</h1>
-    <button style={styles.button} onClick={() => alert('Yay! I’m so happy!')}>Yes</button>
-    <button style={styles.button} onClick={() => alert('Oh no! But I respect your decision.')}>No</button>
+  <div className="text-center p-12">
+    <h1 className="text-4xl text-pink-500 mb-8">Liezel, will you be my girlfriend?</h1>
+    <button className="text-white bg-pink-500 py-2 px-4 rounded-lg m-4 hover:bg-pink-600" onClick={() => alert('Yay! I’m so happy!')}>Yes</button>
+    <button className="text-white bg-pink-500 py-2 px-4 rounded-lg m-4 hover:bg-pink-600" onClick={() => alert('Oh no! But I respect your decision.')}>No</button>
   </div>
 );
-
-const styles = {
-  container: { textAlign: 'center', padding: '50px' },
-  button: { textDecoration: 'none', color: '#fff', backgroundColor: '#ff69b4', padding: '10px 20px', borderRadius: '5px', margin: '10px' }
-};
 
 export default Question;
 

@@ -1,14 +1,10 @@
 import React from 'react';
 
 const Memories = () => (
-  <div style={styles.container}>
-    <h1>Memory Lane</h1>
+  <div className="p-12 text-center">
+    <h1 className="text-4xl text-pink-500 mb-8">Memory Lane</h1>
     {/* Add your memories here */}
   </div>
 );
-
-const styles = {
-  container: { padding: '50px', textAlign: 'center' }
-};
 
 export default Memories;
