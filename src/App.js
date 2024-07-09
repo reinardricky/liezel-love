@@ -1,17 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import About from './components/About';
-import Memories from './components/Memories';
-import Question from './components/Question';
+import Journey from './components/journey';
+import Gallery from './components/Gallery';
 
 const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/memories" element={<Memories />} />
-      <Route path="/question" element={<Question />} />
+      <Route path="/journey" element={<Journey />} />
+      <Route path="/gallery" element={<Gallery/>} />
     </Routes>
   </Router>
 );
