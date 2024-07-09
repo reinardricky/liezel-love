@@ -61,13 +61,13 @@ const Journey = () => (
       </h1>
       <div className="flex justify-evenly">
         <Link
-          to="/gallery"
+          to="/yay"
           className="text-white bg-pink-500 py-2 px-4 rounded-lg hover:bg-pink-600"
         >
           MAU!
         </Link>
         <Link
-          to="/gallery"
+          to="/yay"
           className="text-white bg-pink-500 py-2 px-4 rounded-lg hover:bg-pink-600"
         >
           MAU BANGET!
