@@ -30,12 +30,10 @@ const Valentine = () => {
   };
 
   const loveMessages = [
-    { emoji: "🥰", text: "You make me smile!" },
-    { emoji: "🦋", text: "My heart flutters!" },
-    { emoji: "🌙", text: "My dream come true" },
-    { emoji: "☀️", text: "My sunshine!" },
-    { emoji: "🏠", text: "My home is you" },
-    { emoji: "✨", text: "Pure magic!" },
+    { image: "/images/valentine/image-1.jpg", text: "🥰" },
+    { image: "/images/valentine/image-2.jpg", text: "💖" },
+    // { image: "/images/valentine/image-3.jpg", text: "✨" },
+    // { image: "/images/valentine/image-4.jpg", text: "💕" },
   ];
 
   return (
@@ -103,7 +101,7 @@ const Valentine = () => {
           <p className="text-center text-pink-600 mb-4 text-lg">
             ✨ Tap cards to reveal! ✨
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
             {loveMessages.map((msg, i) => (
               <div
                 key={i}
@@ -111,16 +109,22 @@ const Valentine = () => {
                   e.stopPropagation();
                   revealCard(i);
                 }}
-                className={`aspect-square rounded-2xl cursor-pointer transition-all duration-500 transform hover:scale-105 ${
+                className={`aspect-[4/5] rounded-2xl cursor-pointer transition-all duration-500 transform hover:scale-105 ${
                   revealedCards.includes(i)
-                    ? "bg-gradient-to-br from-pink-400 to-red-400 rotate-0"
+                    ? "rotate-0"
                     : "bg-gradient-to-br from-pink-200 to-red-200 hover:rotate-3"
-                } shadow-lg flex items-center justify-center`}
+                } shadow-lg flex items-center justify-center overflow-hidden`}
               >
                 {revealedCards.includes(i) ? (
-                  <div className="text-center text-white p-2 animate-pulse">
-                    <span className="text-4xl block mb-1">{msg.emoji}</span>
-                    <span className="font-bold">{msg.text}</span>
+                  <div className="relative w-full h-full">
+                    <img
+                      src={msg.image}
+                      alt={`Our memory ${i + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute bottom-2 right-2 text-3xl animate-bounce">
+                      {msg.text}
+                    </div>
                   </div>
                 ) : (
                   <span className="text-5xl">💌</span>
@@ -169,7 +173,7 @@ const Valentine = () => {
           {showSecret && (
             <div className="mt-4 bg-white/90 rounded-2xl p-6 max-w-sm mx-auto shadow-xl animate-pulse">
               <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500">
-                I Love You! 💕
+                I Wuff You! 💕
               </p>
               <p className="text-pink-400 mt-2">Forever & Always ∞</p>
             </div>
