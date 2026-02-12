@@ -32,8 +32,8 @@ const Valentine = () => {
   const loveMessages = [
     { image: "/images/valentine/image-1.jpg", text: "🥰" },
     { image: "/images/valentine/image-2.jpg", text: "💖" },
-    // { image: "/images/valentine/image-3.jpg", text: "✨" },
-    // { image: "/images/valentine/image-4.jpg", text: "💕" },
+    { image: "/images/valentine/image-3.jpg", text: "✨" },
+    { image: "/images/valentine/image-4.jpg", text: "💕" },
   ];
 
   return (
