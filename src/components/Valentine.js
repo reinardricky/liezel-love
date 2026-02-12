@@ -75,7 +75,7 @@ const Valentine = () => {
         {/* Interactive Title */}
         <div className="text-center mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-pink-500 cursor-pointer hover:scale-110 transition-transform inline-block">
-            Happy Valentine's! 💝
+            Happy Valentine's!
           </h1>
         </div>
 
