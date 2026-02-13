@@ -193,7 +193,7 @@ const Valentine = () => {
               </span>
             ))}
           </div>
-          <p className="text-pink-500">tap anywhere for more wuff! 💖</p>
+          <p className="text-pink-500">tap anywhere for foop wuff! 💖</p>
         </div>
       </div>
     </div>
